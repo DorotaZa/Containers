@@ -17,10 +17,16 @@ double addition(double a, double b)
 
 int main()
 {
+
+    //a)
     auto lambdaPrint = []() { std::cout << "Lambda says Hello!" << std::endl; };
     lambdaPrint();
+    print();
+
+ 
+    //b)
     auto lambdaAddition = [](double a, double b) {return a + b; };
     std::cout << "Sum using lambda function = " << lambdaAddition(1.11, 2.22) << std::endl;
-    print();
     std::cout << "Sum = " << addition(1.23, 3.45) << std::endl;
+    
 }
